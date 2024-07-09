@@ -1,0 +1,4 @@
+openAI
+soundfile
+whisper
+pydub

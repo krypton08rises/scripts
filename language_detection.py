@@ -27,7 +27,9 @@ def language_detector(model, fileName):
 
     # detect the spoken language
     _, probs = model.detect_language(mel)
-    print(f"Detected language: {max(probs, key=probs.get)}")
+
+    # print(f"Detected language: {max(probs, key=probs.get)}")
+    return max(probs, key=probs.get)
 
 
 ## TESTS:
